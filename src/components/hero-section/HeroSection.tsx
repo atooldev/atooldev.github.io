@@ -1,18 +1,41 @@
-const HeroSection = () => {
+import Button from "../base/button/Button";
+
+
+type HeroSectionProps = {
+    badge?: string;
+    title: string;
+    description: string;
+    heroImage?: React.ReactNode;
+    variant?: 'default' | 'reverse';
+}
+const HeroSection = ({ badge, title, description, variant = 'default', heroImage = "https://images.unsplash.com/file-1668626794835-4d75cc3139a4image?dpr=2&auto=format&fit=crop&w=416&q=60" }: HeroSectionProps) => {
+
     return (
         <div className="hero-section">
-            <div className="container mx-auto px-4">
-                <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
-                    <div className="w-full lg:w-1/2">
-                        <h1 className="text-3xl lg:text-5xl font-bold mb-4">The best way to manage your business</h1>
-                        <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec aliquam aliquet, nunc orci aliquam nisl, sed aliquet lorem nisl sit amet enim. Sed euismod, nisl nec aliquam aliquet, nunc orci aliquam nisl, sed aliquet lorem nisl sit amet enim.</p>
-                        <div className="flex items-center">
-                            <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-4">Get Started</button>
-                            <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">Learn More</button>
+            <div className="container mx-auto py-24">
+                <div className={`flex  ${variant === 'reverse' ? 'flex-col-reverse sm:flex-row-reverse' : 'flex-col sm:flex-row'}  items-center justify-between`}>
+                    <div className={`w-full lg:w-1/2 ${variant === 'reverse' ? 'ml-12 text-center sm:text-right' : ''}`}>
+                        {!!badge && <span className="text-blue-500 font-medium uppercase ">{badge}</span>}
+                        {!!title && <h1 className="text-3xl  text-white lg:text-7xl font-bold my-4 mb-6 ">
+                            {title}
+                        </h1>}
+                        {!!description &&
+                            <p className="text-gray-500 text-lg pr-5 mb-8">{description}</p>
+                        }
+                        <div
+                            className={`flex items-center w-full ${variant === 'reverse' ? 'justify-center sm:justify-end' : ''}`}
+                        >
+                            <Button
+                                title="Get Started"
+                                variant="primary"
+                                className="mr-4" />
+                            <Button
+                                title="Learn More"
+                                variant="secondary" />
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2">
-                        <img src="https://images.unsplash.com/file-1668626794835-4d75cc3139a4image?dpr=2&auto=format&fit=crop&w=416&q=60" className="w-full" alt="Hero" />
+                    <div className="w-full lg:w-1/2 fill-white">
+                        {heroImage}
                     </div>
                 </div>
             </div>
