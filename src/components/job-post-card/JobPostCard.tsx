@@ -1,5 +1,6 @@
 // job post card with image title and short description
 
+import Image from "next/image";
 import Button from "../base/button/Button";
 
 type JobPostCardProps = {
@@ -16,7 +17,9 @@ const JobPostCard = ({ title, description, image }: JobPostCardProps) => {
             <div className="shadow bg-brand-blue px-3 py-4">
                 <div className="flex flex-col items-center">
                     <div className="mr-4 fill-white  w-44 h-44 mb-8 py-6 px-4">
-                        <img
+                        <Image
+                            width={200}
+                            height={200}
                             src={image}
                             alt={description}
                         />

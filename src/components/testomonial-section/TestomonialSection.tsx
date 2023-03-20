@@ -1,3 +1,4 @@
+import Image from "next/image";
 import QuoteIcon from "../base/icons/QuoteIcon";
 
 // three testomonials with header on top these 3 use tailwind css
@@ -6,9 +7,9 @@ const TestomonialSection = () => {
         <div className="">
             <div className="container mx-auto">
                 <div className="flex flex-col items-center justify-center">
-                    <h2 className="font-bold text-white text-3xl mt-12 mb-4"> 
+                    <h2 className="font-bold text-white text-3xl mt-12 mb-4">
                         Some of our awesome Testomonials
-                     </h2>
+                    </h2>
                     <p className="text-lg text-gray-500"> Lorem, ipsum dolor sit harum!</p>
                     <div className="flex sm:flex-row flex-col  items-center justify-center mt-24">
                         <TestomonialItem
@@ -48,8 +49,9 @@ const TestomonialItem = ({ message, avatar, name, designation, }: TestomonialIte
     return (
         <div className="bg-brand-blue shadow-lg relative rounded-lg mt-20  sm:mt-4 px-8 py-8 mx-4 my-4">
             {avatar &&
-                <img
-
+                <Image
+                    width={112}
+                    height={112}
                     className="h-28 w-28  absolute -top-14 left-8 rounded-full object-cover mx-auto"
                     src={avatar}
                     alt="" />

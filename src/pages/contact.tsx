@@ -3,7 +3,12 @@ import Layout from "@/components/layout/Layout"
 const Contact = () => {
 
     return (
-        <Layout>
+        <Layout
+        title='‌OfBytes - Contact us'
+        description='Helping you to build your business with our services.'
+        image='https://images.unsplash.com/photo-1616166330003-8b2b2b2b2b2b?dpr=2&auto=format&fit=crop&w=416&q=60'
+        url='https://ofbytes.com/contact'
+        >
             <div>
                 <div className="max-w-7xl  py-12 px-4 sm:px-6 lg:px-8 lg:py-24  items-center justify-center flex flex-col">
                     <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">

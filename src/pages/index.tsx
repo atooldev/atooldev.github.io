@@ -12,7 +12,12 @@ import TestomonialSection from '@/components/testomonial-section/TestomonialSect
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout
+      title='‌OfBytes - Build your Business with us'
+      description='Helping you to build your business with our services.'
+      image='https://images.unsplash.com/photo-1616166330003-8b2b2b2b2b2b?dpr=2&auto=format&fit=crop&w=416&q=60'
+      url='https://ofbytes.com'
+    >
       <HeroSection
         title='‌Build your Business with us'
         description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.'

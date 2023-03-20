@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 type TeamMemberProps = {
     name: string;
@@ -10,7 +11,9 @@ const TeamMember = ({ name, role, image, description }: TeamMemberProps) => {
     return (
         <div className="flex flex-col items-center">
             <div className="mr-4 rounded-full fill-white h-60 w-60 mb-8 py-6">
-                <img
+                <Image
+                    width={100}
+                    height={100}
                     className="rounded-full w-full object-contain grayscale hover:grayscale-0 "
                     src={image}
                     alt={name} />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "../base/button/Button";
 
 type StepItemProps = {
@@ -12,7 +13,9 @@ const StepItem = ({ title, logo, description }: StepItemProps) => {
             <div className="shadow bg-brand-blue px-3 py-4">
                 <div className="flex flex-col items-center">
                     <div className="mr-4 fill-white h-60 w-60 py-6">
-                        <img
+                        <Image
+                            width={200}
+                            height={200}
                             src={logo}
                             alt={title} />
                     </div>
