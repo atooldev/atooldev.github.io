@@ -1,6 +1,4 @@
 
-// about us page with image of team and description
-
 import Layout from "@/components/layout/Layout";
 import TeamMember from "@/components/team-member/TeamMember";
 
@@ -16,7 +14,6 @@ const About = () => {
             </div>
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-extrabold text-white">Our Team</h2>
-                // each one sperate by role and image
                 <div className=" grid grid-cols-1 gap-12 sm:grid-cols-3">
                     <TeamMember
                         name="Arya"
