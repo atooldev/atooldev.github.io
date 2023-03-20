@@ -7,9 +7,12 @@ type LayoutProps = {
 };
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <div className="layout h-full">
+        <div className="layout  bg-brand-background">
             <AppHeader />
-            <main>{children}</main>
+            <main
+                className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8"
+            >{children}
+            </main>
             <AppFooter />
         </div>
     );
