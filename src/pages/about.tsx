@@ -49,7 +49,7 @@ const About = () => {
                     <TeamMember
                         name="Mehran"
                         role="Frontend Developer"
-                        image="/images/avatars/mehran-2.png"
+                        image="/images/avatars/mehran.png"
                         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero labore natus."
                     />
                      <TeamMember
