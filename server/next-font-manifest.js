@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST={pages:{"/404":["static/media/2aaf0723e720e8b9-s.p.woff2"],"/about":["static/media/2aaf0723e720e8b9-s.p.woff2"],"/careers":["static/media/2aaf0723e720e8b9-s.p.woff2"],"/contact":["static/media/2aaf0723e720e8b9-s.p.woff2"],"/":["static/media/2aaf0723e720e8b9-s.p.woff2"]},app:{},appUsingSizeAdjust:!1,pagesUsingSizeAdjust:!0};
