@@ -14,7 +14,7 @@ const AppHeader = () => {
                         className="h-6 mr-4 sm:h-9"
                         alt="Flowbite Logo"
                     />
-                    <span className="self-center text-xl font-semibold whitespace-nowrap text-gray-50">OfBytes</span>
+                    <span className="self-center text-xl font-semibold whitespace-nowrap text-gray-50">ATool</span>
                 </Link>
                 <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                     <span className="sr-only">Open main menu</span>
@@ -27,11 +27,11 @@ const AppHeader = () => {
                                 Home
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href='/careers' className="block py-2 pl-3 pr-4 text-lg text-gray-700  uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-gray-400 md:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">
                                 Careers
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href='/contact' className="block py-2 pl-3 pr-4 text-lg text-gray-700  uppercase rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 dark:text-gray-400 md:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">
                                 Contact

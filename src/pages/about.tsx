@@ -6,10 +6,10 @@ import TeamMember from "@/components/team-member/TeamMember";
 const About = () => {
     return (
         <Layout
-            title='‌OfBytes - Contact us'
+            title='Atool - Contact us'
             description='Helping you to build your business with our services.'
             image='https://images.unsplash.com/photo-1616166330003-8b2b2b2b2b2b?dpr=2&auto=format&fit=crop&w=416&q=60'
-            url='https://ofbytes.com/about'
+            url='https://atool.dev/about'
         >
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-extrabold text-white">About Us</h2>

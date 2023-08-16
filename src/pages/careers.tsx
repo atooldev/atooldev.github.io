@@ -5,10 +5,10 @@ import Layout from "@/components/layout/Layout";
 const Careers = () => {
     return (
         <Layout
-            title='‌OfBytes - Careers'
+            title='Atool - Careers'
             description='Helping you to build your business with our services.'
             image='https://images.unsplash.com/photo-1616166330003-8b2b2b2b2b2b?dpr=2&auto=format&fit=crop&w=416&q=60'
-            url='https://ofbytes.com/careers'
+            url='https://atoo.dev/careers'
         >
             <div>
                 <div className="max-w-7xl max-sm: py-12 px-4 sm:px-6 lg:px-8 lg:py-24  items-center justify-center flex flex-col">
